@@ -6,6 +6,10 @@ target 'LISA' do
   use_frameworks!
 
   # Pods for LISA
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+
+  pod 'JTAppleCalendar'
 
   target 'LISATests' do
     inherit! :search_paths
