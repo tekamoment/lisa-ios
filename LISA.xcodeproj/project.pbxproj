@@ -14,6 +14,13 @@
 		18A1E860226F8655005CD5A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A1E85E226F8655005CD5A9 /* LaunchScreen.storyboard */; };
 		18A1E86B226F8655005CD5A9 /* LISATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E86A226F8655005CD5A9 /* LISATests.swift */; };
 		18A3E1C72279816A00183777 /* SettingsRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1C62279816A00183777 /* SettingsRootTableViewController.swift */; };
+		18A3E1C9227985E500183777 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1C8227985E500183777 /* HomeViewController.swift */; };
+		18A3E1CB2279866100183777 /* HomeViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1CA2279866100183777 /* HomeViewController+CollectionView.swift */; };
+		18A3E1CE227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1CC227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift */; };
+		18A3E1CF227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A3E1CD227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib */; };
+		18A3E1D222798D7200183777 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1D122798D7200183777 /* BaseRoundedCardCell.swift */; };
+		18A3E1D822798F4100183777 /* ServiceCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1D622798F4100183777 /* ServiceCardCell.swift */; };
+		18A3E1D922798F4100183777 /* ServiceCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A3E1D722798F4100183777 /* ServiceCardCell.xib */; };
 		1D22DE008079F7FE042E5179 /* Pods_LISATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5988B665198EC8FBB6B268D /* Pods_LISATests.framework */; };
 		6FE39C9EA27378F10C6DD75D /* Pods_LISA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EF9D2900DEF5E986C881A3 /* Pods_LISA.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +49,13 @@
 		18A1E86A226F8655005CD5A9 /* LISATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LISATests.swift; sourceTree = "<group>"; };
 		18A1E86C226F8655005CD5A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A3E1C62279816A00183777 /* SettingsRootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootTableViewController.swift; sourceTree = "<group>"; };
+		18A3E1C8227985E500183777 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18A3E1CA2279866100183777 /* HomeViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		18A3E1CC227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		18A3E1CD227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		18A3E1D122798D7200183777 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
+		18A3E1D622798F4100183777 /* ServiceCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCardCell.swift; sourceTree = "<group>"; };
+		18A3E1D722798F4100183777 /* ServiceCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCardCell.xib; sourceTree = "<group>"; };
 		1D4CEFE3F0CF0CA081D0E092 /* Pods-LISA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LISA.debug.xcconfig"; path = "Target Support Files/Pods-LISA/Pods-LISA.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EF9D2900DEF5E986C881A3 /* Pods_LISA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5988B665198EC8FBB6B268D /* Pods_LISATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +108,9 @@
 				18A1E855226F8652005CD5A9 /* AppDelegate.swift */,
 				18A1E857226F8652005CD5A9 /* ViewController.swift */,
 				18A1E859226F8652005CD5A9 /* Main.storyboard */,
+				18A3E1C8227985E500183777 /* HomeViewController.swift */,
+				18A3E1CA2279866100183777 /* HomeViewController+CollectionView.swift */,
+				18A3E1D022798B0500183777 /* Home Controller */,
 				18A3E1C62279816A00183777 /* SettingsRootTableViewController.swift */,
 				18A1E85C226F8655005CD5A9 /* Assets.xcassets */,
 				18A1E85E226F8655005CD5A9 /* LaunchScreen.storyboard */,
@@ -109,6 +126,26 @@
 				18A1E86C226F8655005CD5A9 /* Info.plist */,
 			);
 			path = LISATests;
+			sourceTree = "<group>";
+		};
+		18A3E1D022798B0500183777 /* Home Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A3E1D322798EC200183777 /* Cells */,
+				18A3E1CD227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib */,
+				18A3E1CC227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift */,
+			);
+			path = "Home Controller";
+			sourceTree = "<group>";
+		};
+		18A3E1D322798EC200183777 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18A3E1D122798D7200183777 /* BaseRoundedCardCell.swift */,
+				18A3E1D622798F4100183777 /* ServiceCardCell.swift */,
+				18A3E1D722798F4100183777 /* ServiceCardCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		7E15C5D5237748B0449BF69B /* Pods */ = {
@@ -216,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A1E860226F8655005CD5A9 /* LaunchScreen.storyboard in Resources */,
+				18A3E1D922798F4100183777 /* ServiceCardCell.xib in Resources */,
+				18A3E1CF227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib in Resources */,
 				18A1E85D226F8655005CD5A9 /* Assets.xcassets in Resources */,
 				18A1E85B226F8652005CD5A9 /* Main.storyboard in Resources */,
 			);
@@ -317,6 +356,11 @@
 				18A1E858226F8652005CD5A9 /* ViewController.swift in Sources */,
 				18A3E1C72279816A00183777 /* SettingsRootTableViewController.swift in Sources */,
 				18A1E856226F8652005CD5A9 /* AppDelegate.swift in Sources */,
+				18A3E1D822798F4100183777 /* ServiceCardCell.swift in Sources */,
+				18A3E1C9227985E500183777 /* HomeViewController.swift in Sources */,
+				18A3E1CB2279866100183777 /* HomeViewController+CollectionView.swift in Sources */,
+				18A3E1CE227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift in Sources */,
+				18A3E1D222798D7200183777 /* BaseRoundedCardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
