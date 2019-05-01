@@ -38,10 +38,7 @@ extension HomeViewController: UICollectionViewDataSource {
         serviceCell.label.text = "ROOM CLEANING"
         
         //gradient layer
-        let gradientLayer = CAGradientLayer()
-        
-        //define colors
-        gradientLayer.colors = [UIColor(named: "GradientLight")!.cgColor, UIColor(named: "GradientDark")!.cgColor]
+        let gradientLayer = CAGradientLayer.appStyleGradient()
         
         //define frame
         gradientLayer.frame = serviceCell.bounds
