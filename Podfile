@@ -11,6 +11,9 @@ target 'LISA' do
 
   pod 'JTAppleCalendar'
 
+  pod 'Fabric'
+  pod 'Crashlytics'
+
   target 'LISATests' do
     inherit! :search_paths
     # Pods for testing

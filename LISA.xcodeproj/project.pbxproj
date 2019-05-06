@@ -62,6 +62,7 @@
 		18A3E1D122798D7200183777 /* BaseRoundedCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedCardCell.swift; sourceTree = "<group>"; };
 		18A3E1D622798F4100183777 /* ServiceCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCardCell.swift; sourceTree = "<group>"; };
 		18A3E1D722798F4100183777 /* ServiceCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCardCell.xib; sourceTree = "<group>"; };
+		18A551DF227F4A0D005D48F0 /* LISA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LISA.entitlements; sourceTree = "<group>"; };
 		1D4CEFE3F0CF0CA081D0E092 /* Pods-LISA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LISA.debug.xcconfig"; path = "Target Support Files/Pods-LISA/Pods-LISA.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EF9D2900DEF5E986C881A3 /* Pods_LISA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5988B665198EC8FBB6B268D /* Pods_LISATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +112,7 @@
 		18A1E854226F8652005CD5A9 /* LISA */ = {
 			isa = PBXGroup;
 			children = (
+				18A551DF227F4A0D005D48F0 /* LISA.entitlements */,
 				18A1E855226F8652005CD5A9 /* AppDelegate.swift */,
 				18A1E857226F8652005CD5A9 /* ViewController.swift */,
 				18A1E859226F8652005CD5A9 /* Main.storyboard */,
@@ -189,6 +191,7 @@
 				18A1E84F226F8652005CD5A9 /* Frameworks */,
 				18A1E850226F8652005CD5A9 /* Resources */,
 				11ADDC549A36501BE96E2E5B /* [CP] Embed Pods Frameworks */,
+				18A551DD227F3783005D48F0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -230,6 +233,11 @@
 				TargetAttributes = {
 					18A1E851226F8652005CD5A9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					18A1E865226F8655005CD5A9 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -310,6 +318,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LISA/Pods-LISA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		18A551DD227F3783005D48F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 567db3cb8bb75c482293f76960b5716fa100afb2 4c90eeb09be33be78add2708ee500182aa69bf8032a12698e710f28d0fdc049e\n";
 		};
 		6979C63F6F012F30B2F8E5F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -535,7 +561,10 @@
 			baseConfigurationReference = 1D4CEFE3F0CF0CA081D0E092 /* Pods-LISA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AKTPE3FTGW;
 				INFOPLIST_FILE = LISA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,7 +614,9 @@
 			baseConfigurationReference = F137A964E07CAB440D9D16DF /* Pods-LISA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKTPE3FTGW;
 				INFOPLIST_FILE = LISA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

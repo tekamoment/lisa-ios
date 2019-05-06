@@ -5,6 +5,9 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
   - FacebookCore (0.5.0):
     - Bolts (~> 1.9)
     - FBSDKCoreKit (~> 4.37)
@@ -20,6 +23,8 @@ PODS:
   - JTAppleCalendar (7.1.6)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - FacebookCore
   - FacebookLogin
   - JTAppleCalendar
@@ -27,6 +32,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Bolts
+    - Crashlytics
+    - Fabric
     - FacebookCore
     - FacebookLogin
     - FBSDKCoreKit
@@ -35,12 +42,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FacebookCore: 74288d0add931d361b1596beae787ab72c438249
   FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
   FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
   FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
 
-PODFILE CHECKSUM: 54def484ed83d1cbb7278835c179ce42649544db
+PODFILE CHECKSUM: e9c3d59c4eb771eee53dc0529e52437668779244
 
 COCOAPODS: 1.6.0
