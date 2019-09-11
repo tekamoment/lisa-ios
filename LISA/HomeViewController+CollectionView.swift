@@ -61,6 +61,20 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let sectionViewHeader = HomeSectionHeaderCollectionReusableView.dequeue(fromCollectionView: collectionView, identifier: HomeSectionHeaderCollectionReusableView.reuseIdentifier, ofKind: UICollectionView.elementKindSectionHeader, atIndexPath: indexPath)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d"
+        sectionViewHeader.dateLabel.text = dateFormatter.string(from: Date()).uppercased()
+        sectionViewHeader.dateLabel.font = UIFont.systemFont(ofSize: sectionViewHeader.dateLabel.font.pointSize, weight: .heavy)
+        sectionViewHeader.dateLabel.textColor = UIColor.init(white: 0.5, alpha: 1)
+
+        sectionViewHeader.accountNameLabel.text = "Welcome to LISA!"
+//        if let baseProfile = CombinedUserInformation.shared.baseProfile() {
+//            sectionViewHeader.accountNameLabel.text = "Welcome, \(baseProfile.fullName)!"
+//        } else {
+//            sectionViewHeader.accountNameLabel.text = "Welcome to LISA!"
+//        }
+        
         // modify shit if needed
         return sectionViewHeader
     }
@@ -69,5 +83,32 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Did select the cell.
+        guard let _ = services else {
+            displayAlertWithOK(title: "Information loading", body: "Service information is still loading.")
+            return
+        }
+        self.performSegue(withIdentifier: "showService", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showService" {
+            if let indexPaths = collectionView.indexPathsForSelectedItems {
+                let serviceVC = segue.destination as! ServiceViewController
+                serviceVC.service = services?[indexPaths.first!.row]
+            }
+        }
     }
 }
+
+extension UITabBarController {
+    func cleanTitles() {
+        guard let items = self.tabBar.items else {
+            return
+        }
+        for item in items {
+            item.title = ""
+            item.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        }
+    }
+}
+

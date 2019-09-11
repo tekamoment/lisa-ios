@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18180B002294CF4C006C2C4A /* BookingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18180AFF2294CF4C006C2C4A /* BookingCollectionViewCell.xib */; };
+		182DAE03229314350038B95F /* EditProfileFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DAE02229314350038B95F /* EditProfileFormViewController.swift */; };
+		182DAE052294BF990038B95F /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182DAE042294BF990038B95F /* BookingsViewController.swift */; };
+		183713C6227FEFED0017C881 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183713C5227FEFED0017C881 /* RootViewController.swift */; };
+		183713C8227FF8DE0017C881 /* AppAPIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183713C7227FF8DE0017C881 /* AppAPIBase.swift */; };
+		183713CA227FF91E0017C881 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183713C9227FF91E0017C881 /* Request.swift */; };
+		183713CE227FF9BC0017C881 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183713CD227FF9BC0017C881 /* Service.swift */; };
+		183713D0228021760017C881 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183713CF228021760017C881 /* RoundButton.swift */; };
 		185AD3332279CA9D00EE1E9D /* BookingDateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AD3322279CA9C00EE1E9D /* BookingDateSelectionViewController.swift */; };
 		185AD3352279CC2D00EE1E9D /* CAGradientLayer+AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AD3342279CC2D00EE1E9D /* CAGradientLayer+AppStyle.swift */; };
 		185AD3372279DA9500EE1E9D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185AD3362279DA9500EE1E9D /* DateCell.swift */; };
+		18726FE322847E910051D181 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18726FE222847E910051D181 /* ServiceViewController.swift */; };
+		1880B95B228C5E9B00477C12 /* SignUpCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B95A228C5E9B00477C12 /* SignUpCreateAccountViewController.swift */; };
+		1880B95D228C5EA700477C12 /* SignUpCreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B95C228C5EA700477C12 /* SignUpCreateProfileViewController.swift */; };
+		1880B95F228C5EB100477C12 /* SignUpCreateAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B95E228C5EB100477C12 /* SignUpCreateAddressViewController.swift */; };
+		1880B961228C5EBF00477C12 /* SignUpAskPushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B960228C5EBF00477C12 /* SignUpAskPushNotificationsViewController.swift */; };
+		1880B963228C664800477C12 /* SharedSignUpConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B962228C664800477C12 /* SharedSignUpConstants.swift */; };
+		1880B965228D3B8400477C12 /* UIViewController+AdditionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B964228D3B8400477C12 /* UIViewController+AdditionalInsets.swift */; };
+		1880B967228EF5E800477C12 /* SettingsNotLoggedInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1880B966228EF5E800477C12 /* SettingsNotLoggedInView.xib */; };
+		1880B969228EF6C700477C12 /* SettingsNotLoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880B968228EF6C700477C12 /* SettingsNotLoggedInView.swift */; };
 		18A1E856226F8652005CD5A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E855226F8652005CD5A9 /* AppDelegate.swift */; };
 		18A1E858226F8652005CD5A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1E857226F8652005CD5A9 /* ViewController.swift */; };
 		18A1E85B226F8652005CD5A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A1E859226F8652005CD5A9 /* Main.storyboard */; };
@@ -24,6 +41,23 @@
 		18A3E1D222798D7200183777 /* BaseRoundedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1D122798D7200183777 /* BaseRoundedCardCell.swift */; };
 		18A3E1D822798F4100183777 /* ServiceCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E1D622798F4100183777 /* ServiceCardCell.swift */; };
 		18A3E1D922798F4100183777 /* ServiceCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A3E1D722798F4100183777 /* ServiceCardCell.xib */; };
+		18B4C6A62288B32B005BACFA /* CreateBookingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4C6A52288B32B005BACFA /* CreateBookingFormViewController.swift */; };
+		18B500F0228215A20028BBD4 /* LoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B500EF228215A20028BBD4 /* LoginEmailViewController.swift */; };
+		18D0C9AE229073D1006327EB /* CreateBookingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0C9AD229073D1006327EB /* CreateBookingHeaderView.swift */; };
+		18D0C9B0229073DB006327EB /* CreateBookingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D0C9AF229073DB006327EB /* CreateBookingHeaderView.xib */; };
+		18D3C8C122907BA4001A887F /* AddressSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3C8C022907BA4001A887F /* AddressSelectionCell.swift */; };
+		18D3C8C322907BDC001A887F /* AddressSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D3C8C222907BDC001A887F /* AddressSelectionCell.xib */; };
+		18D3C8C522908F9E001A887F /* CreateAddressFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3C8C422908F9E001A887F /* CreateAddressFormViewController.swift */; };
+		18D3C8C72290AD1E001A887F /* BookingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3C8C62290AD1E001A887F /* BookingsListViewController.swift */; };
+		18D53F2722820DE400D8BA32 /* LoginSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D53F2622820DE400D8BA32 /* LoginSplashViewController.swift */; };
+		18DCBE9422969C5A00EC5239 /* PillUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCBE9322969C5A00EC5239 /* PillUILabel.swift */; };
+		18E0618E2296025C0061003E /* ServiceFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0618D2296025C0061003E /* ServiceFeatureViewController.swift */; };
+		18E06191229663C00061003E /* ServiceFeatureCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0618F229663C00061003E /* ServiceFeatureCardCollectionViewCell.swift */; };
+		18E06192229663C00061003E /* ServiceFeatureCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E06190229663C00061003E /* ServiceFeatureCardCollectionViewCell.xib */; };
+		18E06194229695370061003E /* BookingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E06193229695370061003E /* BookingCollectionViewCell.swift */; };
+		18F0410D228F3F0E00177385 /* SignUpCompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0410C228F3F0E00177385 /* SignUpCompletionViewController.swift */; };
+		18F04110228F713300177385 /* CreateBookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0410F228F713300177385 /* CreateBookingConfirmationViewController.swift */; };
+		18F04112228F78D600177385 /* BookingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F04111228F78D600177385 /* BookingsTableViewController.swift */; };
 		1D22DE008079F7FE042E5179 /* Pods_LISATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5988B665198EC8FBB6B268D /* Pods_LISATests.framework */; };
 		6FE39C9EA27378F10C6DD75D /* Pods_LISA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0EF9D2900DEF5E986C881A3 /* Pods_LISA.framework */; };
 /* End PBXBuildFile section */
@@ -41,9 +75,26 @@
 /* Begin PBXFileReference section */
 		04EA8BBEC1B23BB92CF2B782 /* Pods-LISATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LISATests.release.xcconfig"; path = "Target Support Files/Pods-LISATests/Pods-LISATests.release.xcconfig"; sourceTree = "<group>"; };
 		10AB4F82C4D31FB1FBD09893 /* Pods-LISATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LISATests.debug.xcconfig"; path = "Target Support Files/Pods-LISATests/Pods-LISATests.debug.xcconfig"; sourceTree = "<group>"; };
+		18180AFF2294CF4C006C2C4A /* BookingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingCollectionViewCell.xib; sourceTree = "<group>"; };
+		182DAE02229314350038B95F /* EditProfileFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileFormViewController.swift; sourceTree = "<group>"; };
+		182DAE042294BF990038B95F /* BookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		183713C5227FEFED0017C881 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		183713C7227FF8DE0017C881 /* AppAPIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAPIBase.swift; sourceTree = "<group>"; };
+		183713C9227FF91E0017C881 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		183713CD227FF9BC0017C881 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		183713CF228021760017C881 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		185AD3322279CA9C00EE1E9D /* BookingDateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDateSelectionViewController.swift; sourceTree = "<group>"; };
 		185AD3342279CC2D00EE1E9D /* CAGradientLayer+AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AppStyle.swift"; sourceTree = "<group>"; };
 		185AD3362279DA9500EE1E9D /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		18726FE222847E910051D181 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		1880B95A228C5E9B00477C12 /* SignUpCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCreateAccountViewController.swift; sourceTree = "<group>"; };
+		1880B95C228C5EA700477C12 /* SignUpCreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCreateProfileViewController.swift; sourceTree = "<group>"; };
+		1880B95E228C5EB100477C12 /* SignUpCreateAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCreateAddressViewController.swift; sourceTree = "<group>"; };
+		1880B960228C5EBF00477C12 /* SignUpAskPushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAskPushNotificationsViewController.swift; sourceTree = "<group>"; };
+		1880B962228C664800477C12 /* SharedSignUpConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSignUpConstants.swift; sourceTree = "<group>"; };
+		1880B964228D3B8400477C12 /* UIViewController+AdditionalInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AdditionalInsets.swift"; sourceTree = "<group>"; };
+		1880B966228EF5E800477C12 /* SettingsNotLoggedInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsNotLoggedInView.xib; sourceTree = "<group>"; };
+		1880B968228EF6C700477C12 /* SettingsNotLoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNotLoggedInView.swift; sourceTree = "<group>"; };
 		18A1E852226F8652005CD5A9 /* LISA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LISA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A1E855226F8652005CD5A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A1E857226F8652005CD5A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +114,23 @@
 		18A3E1D622798F4100183777 /* ServiceCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCardCell.swift; sourceTree = "<group>"; };
 		18A3E1D722798F4100183777 /* ServiceCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCardCell.xib; sourceTree = "<group>"; };
 		18A551DF227F4A0D005D48F0 /* LISA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LISA.entitlements; sourceTree = "<group>"; };
+		18B4C6A52288B32B005BACFA /* CreateBookingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingFormViewController.swift; sourceTree = "<group>"; };
+		18B500EF228215A20028BBD4 /* LoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailViewController.swift; sourceTree = "<group>"; };
+		18D0C9AD229073D1006327EB /* CreateBookingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingHeaderView.swift; sourceTree = "<group>"; };
+		18D0C9AF229073DB006327EB /* CreateBookingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBookingHeaderView.xib; sourceTree = "<group>"; };
+		18D3C8C022907BA4001A887F /* AddressSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSelectionCell.swift; sourceTree = "<group>"; };
+		18D3C8C222907BDC001A887F /* AddressSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressSelectionCell.xib; sourceTree = "<group>"; };
+		18D3C8C422908F9E001A887F /* CreateAddressFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAddressFormViewController.swift; sourceTree = "<group>"; };
+		18D3C8C62290AD1E001A887F /* BookingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsListViewController.swift; sourceTree = "<group>"; };
+		18D53F2622820DE400D8BA32 /* LoginSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSplashViewController.swift; sourceTree = "<group>"; };
+		18DCBE9322969C5A00EC5239 /* PillUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillUILabel.swift; sourceTree = "<group>"; };
+		18E0618D2296025C0061003E /* ServiceFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFeatureViewController.swift; sourceTree = "<group>"; };
+		18E0618F229663C00061003E /* ServiceFeatureCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFeatureCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		18E06190229663C00061003E /* ServiceFeatureCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceFeatureCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		18E06193229695370061003E /* BookingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCollectionViewCell.swift; sourceTree = "<group>"; };
+		18F0410C228F3F0E00177385 /* SignUpCompletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompletionViewController.swift; sourceTree = "<group>"; };
+		18F0410F228F713300177385 /* CreateBookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingConfirmationViewController.swift; sourceTree = "<group>"; };
+		18F04111228F78D600177385 /* BookingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsTableViewController.swift; sourceTree = "<group>"; };
 		1D4CEFE3F0CF0CA081D0E092 /* Pods-LISA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LISA.debug.xcconfig"; path = "Target Support Files/Pods-LISA/Pods-LISA.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EF9D2900DEF5E986C881A3 /* Pods_LISA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5988B665198EC8FBB6B268D /* Pods_LISATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LISATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,16 +181,50 @@
 			isa = PBXGroup;
 			children = (
 				18A551DF227F4A0D005D48F0 /* LISA.entitlements */,
+				18A1E859226F8652005CD5A9 /* Main.storyboard */,
+				18D3C8C422908F9E001A887F /* CreateAddressFormViewController.swift */,
+				18F04111228F78D600177385 /* BookingsTableViewController.swift */,
 				18A1E855226F8652005CD5A9 /* AppDelegate.swift */,
 				18A1E857226F8652005CD5A9 /* ViewController.swift */,
-				18A1E859226F8652005CD5A9 /* Main.storyboard */,
-				185AD3362279DA9500EE1E9D /* DateCell.swift */,
 				18A3E1C8227985E500183777 /* HomeViewController.swift */,
 				18A3E1CA2279866100183777 /* HomeViewController+CollectionView.swift */,
+				18D53F2622820DE400D8BA32 /* LoginSplashViewController.swift */,
+				18D0C9AD229073D1006327EB /* CreateBookingHeaderView.swift */,
+				18D0C9AF229073DB006327EB /* CreateBookingHeaderView.xib */,
+				18B500EF228215A20028BBD4 /* LoginEmailViewController.swift */,
+				1880B95A228C5E9B00477C12 /* SignUpCreateAccountViewController.swift */,
+				1880B95C228C5EA700477C12 /* SignUpCreateProfileViewController.swift */,
+				1880B95E228C5EB100477C12 /* SignUpCreateAddressViewController.swift */,
+				1880B960228C5EBF00477C12 /* SignUpAskPushNotificationsViewController.swift */,
+				18F0410C228F3F0E00177385 /* SignUpCompletionViewController.swift */,
+				18B4C6A52288B32B005BACFA /* CreateBookingFormViewController.swift */,
+				18D3C8C022907BA4001A887F /* AddressSelectionCell.swift */,
+				18D3C8C222907BDC001A887F /* AddressSelectionCell.xib */,
+				18F0410F228F713300177385 /* CreateBookingConfirmationViewController.swift */,
+				1880B962228C664800477C12 /* SharedSignUpConstants.swift */,
+				18726FE222847E910051D181 /* ServiceViewController.swift */,
+				18E0618F229663C00061003E /* ServiceFeatureCardCollectionViewCell.swift */,
+				18E06190229663C00061003E /* ServiceFeatureCardCollectionViewCell.xib */,
+				18E0618D2296025C0061003E /* ServiceFeatureViewController.swift */,
+				18180AFF2294CF4C006C2C4A /* BookingCollectionViewCell.xib */,
+				18E06193229695370061003E /* BookingCollectionViewCell.swift */,
+				182DAE042294BF990038B95F /* BookingsViewController.swift */,
+				18DCBE9322969C5A00EC5239 /* PillUILabel.swift */,
+				18D3C8C62290AD1E001A887F /* BookingsListViewController.swift */,
+				183713CF228021760017C881 /* RoundButton.swift */,
+				183713C5227FEFED0017C881 /* RootViewController.swift */,
+				185AD3362279DA9500EE1E9D /* DateCell.swift */,
 				185AD3322279CA9C00EE1E9D /* BookingDateSelectionViewController.swift */,
 				185AD3342279CC2D00EE1E9D /* CAGradientLayer+AppStyle.swift */,
-				18A3E1D022798B0500183777 /* Home Controller */,
+				1880B964228D3B8400477C12 /* UIViewController+AdditionalInsets.swift */,
 				18A3E1C62279816A00183777 /* SettingsRootTableViewController.swift */,
+				182DAE02229314350038B95F /* EditProfileFormViewController.swift */,
+				1880B966228EF5E800477C12 /* SettingsNotLoggedInView.xib */,
+				1880B968228EF6C700477C12 /* SettingsNotLoggedInView.swift */,
+				18A3E1D022798B0500183777 /* Home Controller */,
+				183713C7227FF8DE0017C881 /* AppAPIBase.swift */,
+				183713C9227FF91E0017C881 /* Request.swift */,
+				183713CD227FF9BC0017C881 /* Service.swift */,
 				18A1E85C226F8655005CD5A9 /* Assets.xcassets */,
 				18A1E85E226F8655005CD5A9 /* LaunchScreen.storyboard */,
 				18A1E861226F8655005CD5A9 /* Info.plist */,
@@ -269,9 +371,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1880B967228EF5E800477C12 /* SettingsNotLoggedInView.xib in Resources */,
+				18D0C9B0229073DB006327EB /* CreateBookingHeaderView.xib in Resources */,
 				18A1E860226F8655005CD5A9 /* LaunchScreen.storyboard in Resources */,
 				18A3E1D922798F4100183777 /* ServiceCardCell.xib in Resources */,
 				18A3E1CF227987FA00183777 /* HomeSectionHeaderCollectionReusableView.xib in Resources */,
+				18E06192229663C00061003E /* ServiceFeatureCardCollectionViewCell.xib in Resources */,
+				18180B002294CF4C006C2C4A /* BookingCollectionViewCell.xib in Resources */,
+				18D3C8C322907BDC001A887F /* AddressSelectionCell.xib in Resources */,
 				18A1E85D226F8655005CD5A9 /* Assets.xcassets in Resources */,
 				18A1E85B226F8652005CD5A9 /* Main.storyboard in Resources */,
 			);
@@ -296,23 +403,35 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LISA/Pods-LISA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AlignedCollectionViewFlowLayout/AlignedCollectionViewFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlignedCollectionViewFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,17 +507,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F04112228F78D600177385 /* BookingsTableViewController.swift in Sources */,
 				18A1E858226F8652005CD5A9 /* ViewController.swift in Sources */,
+				18F0410D228F3F0E00177385 /* SignUpCompletionViewController.swift in Sources */,
 				185AD3372279DA9500EE1E9D /* DateCell.swift in Sources */,
+				18B4C6A62288B32B005BACFA /* CreateBookingFormViewController.swift in Sources */,
+				18D0C9AE229073D1006327EB /* CreateBookingHeaderView.swift in Sources */,
+				183713C6227FEFED0017C881 /* RootViewController.swift in Sources */,
+				18B500F0228215A20028BBD4 /* LoginEmailViewController.swift in Sources */,
+				1880B95D228C5EA700477C12 /* SignUpCreateProfileViewController.swift in Sources */,
 				18A3E1C72279816A00183777 /* SettingsRootTableViewController.swift in Sources */,
 				185AD3332279CA9D00EE1E9D /* BookingDateSelectionViewController.swift in Sources */,
+				18DCBE9422969C5A00EC5239 /* PillUILabel.swift in Sources */,
+				1880B95B228C5E9B00477C12 /* SignUpCreateAccountViewController.swift in Sources */,
 				18A1E856226F8652005CD5A9 /* AppDelegate.swift in Sources */,
 				18A3E1D822798F4100183777 /* ServiceCardCell.swift in Sources */,
+				182DAE052294BF990038B95F /* BookingsViewController.swift in Sources */,
+				18F04110228F713300177385 /* CreateBookingConfirmationViewController.swift in Sources */,
+				1880B969228EF6C700477C12 /* SettingsNotLoggedInView.swift in Sources */,
+				18E06191229663C00061003E /* ServiceFeatureCardCollectionViewCell.swift in Sources */,
 				185AD3352279CC2D00EE1E9D /* CAGradientLayer+AppStyle.swift in Sources */,
+				18E06194229695370061003E /* BookingCollectionViewCell.swift in Sources */,
+				183713CE227FF9BC0017C881 /* Service.swift in Sources */,
+				183713C8227FF8DE0017C881 /* AppAPIBase.swift in Sources */,
 				18A3E1C9227985E500183777 /* HomeViewController.swift in Sources */,
+				18D3C8C72290AD1E001A887F /* BookingsListViewController.swift in Sources */,
+				1880B965228D3B8400477C12 /* UIViewController+AdditionalInsets.swift in Sources */,
+				1880B961228C5EBF00477C12 /* SignUpAskPushNotificationsViewController.swift in Sources */,
 				18A3E1CB2279866100183777 /* HomeViewController+CollectionView.swift in Sources */,
+				18726FE322847E910051D181 /* ServiceViewController.swift in Sources */,
+				183713CA227FF91E0017C881 /* Request.swift in Sources */,
+				18D3C8C122907BA4001A887F /* AddressSelectionCell.swift in Sources */,
+				18D3C8C522908F9E001A887F /* CreateAddressFormViewController.swift in Sources */,
+				18D53F2722820DE400D8BA32 /* LoginSplashViewController.swift in Sources */,
+				183713D0228021760017C881 /* RoundButton.swift in Sources */,
+				1880B963228C664800477C12 /* SharedSignUpConstants.swift in Sources */,
+				1880B95F228C5EB100477C12 /* SignUpCreateAddressViewController.swift in Sources */,
 				18A3E1CE227987FA00183777 /* HomeSectionHeaderCollectionReusableView.swift in Sources */,
+				182DAE03229314350038B95F /* EditProfileFormViewController.swift in Sources */,
 				18A3E1D222798D7200183777 /* BaseRoundedCardCell.swift in Sources */,
+				18E0618E2296025C0061003E /* ServiceFeatureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = AKTPE3FTGW;
 				INFOPLIST_FILE = LISA/Info.plist;
@@ -604,8 +752,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosarcenas.LISA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "LISA Thesis Group";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -615,8 +764,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AKTPE3FTGW;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LISA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,8 +805,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlosarcenas.LISA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

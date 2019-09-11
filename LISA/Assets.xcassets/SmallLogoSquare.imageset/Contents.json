@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "LISA interface-37 (120px)-2.png",
+      "filename" : "Lisa Logo (square, 180px).png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "LISA interface-37 (80px).png",
+      "filename" : "Lisa Logo (square, 120px).png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "LISA interface-37 (120px)-1.png",
+      "filename" : "Lisa Logo (square, 180px)-2.png",
       "scale" : "3x"
     }
   ],

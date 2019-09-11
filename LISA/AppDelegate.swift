@@ -19,12 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var pushNotificationRegistrationDelegate: AppDelegatePushNotificationRegistrationDelegate? = nil
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         Fabric.with([Crashlytics.self])
-        registerForPushNotifications()
+//        registerForPushNotifications()
         return true
     }
 
@@ -84,16 +85,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
         print("Device Token: \(token)")
+        // actually send shit here
+        
+        let apnsRequest = APNSRequest(registrationId: token)
+        guard let loginDetails = CombinedUserInformation.shared.loginDetails(), let apnsRequestData = try? JSONEncoder().encode(apnsRequest) else {
+            print("ERROR ERROR ERROR")
+            return
+        }
+        
+        let pushNotificationsRequest = NetworkRequest(url: URL(string: AppAPIBase.APNSRegistrationPath)!, method: .POST, data: apnsRequestData, headers: AppAPIBase.standardHeaders(withToken: loginDetails.accessToken))
+        pushNotificationsRequest.execute { (data) in
+            guard let data = data else {
+                self.pushNotificationRegistrationDelegate?.registrationForPushNotificationsCompleted(success: false)
+                return
+            }
+            
+            print(String(data: data, encoding: .utf8))
+            
+        self.pushNotificationRegistrationDelegate?.registrationForPushNotificationsCompleted(success: true)
+            
+        }
     }
     
     func application(
         _ application: UIApplication,
         didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register: \(error)")
+        pushNotificationRegistrationDelegate?.registrationForPushNotificationsCompleted(success: false)
     }
-
-
-
-
 }
 
+protocol AppDelegatePushNotificationRegistrationDelegate: class {
+//    func registration
+    func registrationForPushNotificationsCompleted(success: Bool)
+}

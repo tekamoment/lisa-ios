@@ -13,22 +13,10 @@ class BookingDateSelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let gradientLayer = CAGradientLayer.appStyleGradient()
         gradientLayer.frame = self.view.frame
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -47,7 +35,6 @@ extension BookingDateSelectionViewController: JTAppleCalendarViewDataSource {
 }
 
 extension BookingDateSelectionViewController: JTAppleCalendarViewDelegate {
-
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
         self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
@@ -94,9 +81,9 @@ extension BookingDateSelectionViewController: JTAppleCalendarViewDelegate {
     
     func handleCellSelected(cell: DateCell, cellState: CellState) {
         if cellState.isSelected {
-            cell.dateBackgroundView.backgroundColor = UIColor.white
+            cell.dateBackgroundView.layer.backgroundColor = UIColor.white.cgColor
         } else {
-            cell.dateBackgroundView.backgroundColor = UIColor.clear
+            cell.dateBackgroundView.layer.backgroundColor = UIColor.clear.cgColor
         }
     }
 }

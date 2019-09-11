@@ -13,6 +13,12 @@ target 'LISA' do
 
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Eureka'
+  pod 'ImageRow'
+  pod 'FontAwesome.swift'
+  pod 'IGListKit'
+  pod 'AlignedCollectionViewFlowLayout'
+  pod 'PKHUD', '~> 5.0'
 
   target 'LISATests' do
     inherit! :search_paths
