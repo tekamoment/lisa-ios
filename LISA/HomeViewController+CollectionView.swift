@@ -56,7 +56,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: HomeSectionHeaderCollectionReusableView.viewHeight)
+        if let headerView = collectionView.visibleSupplementaryViews(ofKind: UICollectionView.elementKindSectionHeader).first as? HomeSectionHeaderCollectionReusableView {
+            headerView.layoutIfNeeded()
+            let targetSize = CGSize(width: collectionView.frame.width, height: UIView.layoutFittingCompressedSize.height)
+            let height = headerView.systemLayoutSizeFitting(targetSize).height
+            return CGSize(width: collectionView.frame.width, height: height)
+        }
+        return CGSize(width: 1, height: 1)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -68,12 +74,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         sectionViewHeader.dateLabel.font = UIFont.systemFont(ofSize: sectionViewHeader.dateLabel.font.pointSize, weight: .heavy)
         sectionViewHeader.dateLabel.textColor = UIColor.init(white: 0.5, alpha: 1)
 
-        sectionViewHeader.accountNameLabel.text = "Welcome to LISA!"
-//        if let baseProfile = CombinedUserInformation.shared.baseProfile() {
-//            sectionViewHeader.accountNameLabel.text = "Welcome, \(baseProfile.fullName)!"
-//        } else {
-//            sectionViewHeader.accountNameLabel.text = "Welcome to LISA!"
-//        }
+        if let baseProfile = CombinedUserInformation.shared.baseProfile() {
+            sectionViewHeader.accountNameLabel.text = "Welcome, \(baseProfile.fullName)!"
+        } else {
+            sectionViewHeader.accountNameLabel.text = "Welcome to LISA!"
+        }
         
         // modify shit if needed
         return sectionViewHeader

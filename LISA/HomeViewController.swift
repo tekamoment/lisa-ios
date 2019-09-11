@@ -24,6 +24,11 @@ class HomeViewController: UIViewController {
 //        tabBar.selectionIndicatorImage = UIImage().createSelectionIndicator(color: UIColor(named: "LISABlue")!, size: CGSize(width: ceil(tabBar.frame.width / CGFloat(tabBar.items!.count)), height: tabBar.frame.height - 1), lineWidth: 2.5).resizableImage(withCapInsets: .zero)
         self.tabBarController?.cleanTitles()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadSections(IndexSet(0 ..< 1))
+    }
 }
 
 extension HomeViewController {

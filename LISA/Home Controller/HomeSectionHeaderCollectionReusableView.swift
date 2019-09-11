@@ -10,7 +10,6 @@ import UIKit
 
 class HomeSectionHeaderCollectionReusableView: UICollectionReusableView {
 
-    internal static let viewHeight: CGFloat = 100
     internal static let reuseIdentifier = "HomeSectionHeader"
     
     @IBOutlet weak var accountNameLabel: UILabel!

@@ -60,6 +60,7 @@ class SettingsRootTableViewController: UITableViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let navController = self.navigationController, navController.view.subviews.contains(notLoggedInView) {
             notLoggedInView.removeFromSuperview()
         }
