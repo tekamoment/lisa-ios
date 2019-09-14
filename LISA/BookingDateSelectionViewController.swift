@@ -21,8 +21,8 @@ class BookingDateSelectionViewController: UIViewController {
 }
 
 
-extension BookingDateSelectionViewController: JTAppleCalendarViewDataSource {
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+extension BookingDateSelectionViewController: JTACMonthViewDataSource {
+    func configureCalendar(_ calendar: JTACMonthView) -> ConfigurationParameters {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy MM dd"
         let startDate = Date()
@@ -34,26 +34,26 @@ extension BookingDateSelectionViewController: JTAppleCalendarViewDataSource {
     }
 }
 
-extension BookingDateSelectionViewController: JTAppleCalendarViewDelegate {
-    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
+extension BookingDateSelectionViewController: JTACMonthViewDelegate {
+    func calendar(_ calendar: JTACMonthView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTACDayCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "dateCell", for: indexPath) as! DateCell
         self.calendar(calendar, willDisplay: cell, forItemAt: date, cellState: cellState, indexPath: indexPath)
         return cell
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
+    func calendar(_ calendar: JTACMonthView, willDisplay cell: JTACDayCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         configureCell(view: cell, cellState: cellState)
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didSelectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
         configureCell(view: cell, cellState: cellState)
     }
     
-    func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+    func calendar(_ calendar: JTACMonthView, didDeselectDate date: Date, cell: JTACDayCell?, cellState: CellState) {
         configureCell(view: cell, cellState: cellState)
     }
     
-    func configureCell(view: JTAppleCell?, cellState: CellState) {
+    func configureCell(view: JTACDayCell?, cellState: CellState) {
         guard let cell = view as? DateCell  else { return }
         cell.dateLabel.text = cellState.text
         

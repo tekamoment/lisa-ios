@@ -404,7 +404,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LISA/Pods-LISA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AlignedCollectionViewFlowLayout/AlignedCollectionViewFlowLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -421,7 +420,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlignedCollectionViewFlowLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -711,6 +709,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 21;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = AKTPE3FTGW;
 				INFOPLIST_FILE = LISA/Info.plist;
@@ -720,8 +719,6 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"Bolts\"",
 					"-framework",
 					"\"FBSDKCoreKit\"",
 					"-framework",
@@ -765,6 +762,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LISA/LISA.entitlements;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LISA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -773,8 +771,6 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-framework",
-					"\"Bolts\"",
 					"-framework",
 					"\"FBSDKCoreKit\"",
 					"-framework",

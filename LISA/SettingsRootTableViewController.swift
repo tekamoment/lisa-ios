@@ -35,9 +35,7 @@ class SettingsRootTableViewController: UITableViewController {
         
         // Sample table view cell
         
-        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        tableView.backgroundColor = .white
     }
     
     func setupLogInView() {

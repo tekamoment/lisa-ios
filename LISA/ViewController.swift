@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
+        let loginButton = FBLoginButton(permissions: [ .publicProfile, .email ])
         loginButton.center = view.center
         
         view.addSubview(loginButton)
@@ -28,30 +28,29 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: LoginButtonDelegate {
-    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
-        switch result {
-        case .success(let grantedPermissions, let refusedPermissions, let accessToken):
-            print("Granted permissions: \(grantedPermissions), refused permissions: \(refusedPermissions), access token: \(accessToken)")
-        case .cancelled:
-            break
-        case .failed(let error):
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if let result = result, let token = result.token {
+            print("Granted permissions: \(result.grantedPermissions), refused permissions: \(result.declinedPermissions), access token: \(token)")
+        } else if let error = error {
             print(error)
         }
     }
     
-    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+    func loginButtonDidCompleteLogin(_ loginButton: FBLoginButton, result: LoginResult) {
+        
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         // Log out!
     }
     
     func graphRequestPhoto(accessToken: AccessToken) {
-        guard let userId = accessToken.userId else {
-            print("Missing user id in access token")
-            return
-        }
-        let graphRequest = GraphRequest(graphPath: "/\(userId)/picture", parameters: ["redirect" : "false"], accessToken: accessToken, httpMethod: .GET, apiVersion: .defaultVersion)
-        graphRequest.start { (urlResponse, requestResult) in
-            print(urlResponse)
-            print(requestResult)
+        let userId = accessToken.userID
+        
+        let graphRequest = GraphRequest(graphPath: "/\(userId)/picture", parameters: ["redirect" : "false"], tokenString: accessToken.tokenString, version: nil, httpMethod: .get)
+        graphRequest.start { (connection, response, error) in
+            print(connection)
+            print(response)
         }
     }
 }
